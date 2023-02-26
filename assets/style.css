@@ -1,0 +1,106 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.content{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+.card-title{
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 20px;
+}
+.question{
+    margin-bottom: 20px;
+}
+
+.choices{
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: 0.3rem 2.5rem !important;
+    font-size: 14px;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default;
+}
+.notCorrect{
+    color: red;
+    position: relative;
+    display: inline-block;
+}
+.correct{
+    color: green;
+    position: relative;
+    display: inline-block;
+}
+.correct::before{
+    position: absolute;
+    content: "\e86d";
+    font: normal normal 14px/1 'Linearicons-Free';
+    vertical-align: middle;
+    margin-top: 6px;
+    right: -10px;
+    font-weight: bold;
+}
+.notCorrect::before{
+    position: absolute;
+    content: "\e870";
+    font: normal normal 14px/1 'Linearicons-Free';
+    vertical-align: middle;
+    margin-top: 6px;
+    right: -10px;
+   font-weight: bold;
+}
+.custom-progress{
+            border: 1px solid blueviolet;
+            padding: 5px;
+            border-radius: 6px;
+            width: 100%;
+            height: auto;
+}
+.progress-bar{
+    background: blueviolet;
+    padding: 5px;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+}
+.sidebar{flex-basis: 40%;}
+
+#correctAnswer{
+    margin-top: 10px;
+}
+.fa-eye{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.my-modal{
+    background: #3633335c;
+    position: fixed;
+    top: 10%;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 5px;
+}
+.time{
+    background: rgb(3, 3, 58);
+    color: #fff;
+}
